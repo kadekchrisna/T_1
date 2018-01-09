@@ -10,9 +10,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
+
+import java.util.Map;
+
 public class MenuFront extends AppCompatActivity {
 
     private TextView mTextMessage;
+    PhotoViewAttacher pta;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -27,8 +32,8 @@ public class MenuFront extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_dashboard);
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
+                    Intent intn = new Intent(MenuFront.this, MapsActivity.class);
+                    startActivity(intn);
             }
             return false;
         }
@@ -45,7 +50,7 @@ public class MenuFront extends AppCompatActivity {
         onClick();
 
     }
-    public void onClick(){
+    private void onClick(){
         Button but1 = (Button) findViewById(R.id.but);
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,5 +60,6 @@ public class MenuFront extends AppCompatActivity {
             }
         });
     }
+
 
 }

@@ -1,4 +1,4 @@
-package dev.edmt.viewpagerdemo;
+package com.kadek.t_1;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,12 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.github.chrisbanes.photoview.PhotoView;
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
 import com.squareup.picasso.Picasso;
 
 /**
  * Created by reale on 13/07/2016.
  */
-public class ViewPagerAdapter extends PagerAdapter{
+public class ViewPagerAdapter extends PagerAdapter {
     Activity activity;
     String[] images;
     LayoutInflater inflater;
@@ -49,6 +51,10 @@ public class ViewPagerAdapter extends PagerAdapter{
         int width = dis.widthPixels;
         image.setMinimumHeight(height);
         image.setMinimumWidth(width);
+
+
+
+
 
         try{
             Picasso.with(activity.getApplicationContext())
