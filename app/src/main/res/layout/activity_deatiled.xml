@@ -28,7 +28,7 @@
                 android:adjustViewBounds="true"
                 app:srcCompat="@drawable/ic_launcher_background"/>
             <ImageButton
-                android:id="@+id/button2"
+                android:id="@+id/imbutton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"

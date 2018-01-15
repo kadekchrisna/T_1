@@ -6,4 +6,17 @@
     android:layout_height="match_parent"
     tools:context="com.kadek.t_1.YoutubeActivity">
 
+
+    <com.google.android.youtube.player.YouTubePlayerView
+
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
 </android.support.constraint.ConstraintLayout>
