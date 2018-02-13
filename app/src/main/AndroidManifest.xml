@@ -33,7 +33,9 @@
             android:theme="@style/Black"
             />
 
-        <activity android:name=".Splash">
+        <activity
+                android:name=".Splash"
+            android:theme="@style/White">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
